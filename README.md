@@ -1,4 +1,4 @@
-Follow the steps to re-use STIG Simulator in your environment:
+Follow the steps to re-use STIG Simulator in your environment: (Recommended: PyCharm tool)
 
 For Default Interference Scenario: {Tea Shop & Book Shop & Sock Shop}
 

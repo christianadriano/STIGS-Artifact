@@ -11,7 +11,7 @@ Step3: Run the STIG_generation.py (Use default settings)
 Main file is STIG_generation that is calling other files to product STIGs(Spatio-Temporal Interference Graphs)
 
 Customize Scenario: 
-Step: 1  Step:1 Configure the Environment (Clone the STIG_Simulator project into your Operating System)
+Step: 1 Configure the Environment (Clone the STIG_Simulator project into your Operating System)
 
 Step2: pip install -r requirements.txt
 

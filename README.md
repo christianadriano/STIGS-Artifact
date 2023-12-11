@@ -17,6 +17,8 @@ Step2: pip install -r requirements.txt
 
 Step 3: (a) In temporal_graph.py file , initial customized system architecture and deployment configuration file  
         and choose a path where you want to store temporal call graph. 
+       - System architecture -> interation btw services
+       - Dedeployment configuration file -> on which worker Node services are deployed (Hosted)
 Code line 12: 
   def main():
 
@@ -34,5 +36,5 @@ change  SOURCE_NODE = 'A1' , TARGET_NODE = 'B1' ( According to new ground truth 
 
 ****Note**** (Code line: 202, STIG_generation.py )
 NUMBER_OF_MODELS = 2 (up to 10 rankings of STIGs can generate using graph embedding metrics (Metrics Folder))
-VISUALIZE = True  # Enabling visualization will make first ranking very costly but print all the STIKs
+VISUALIZE = True  # Enabling visualization will make first ranking very costly but print all the STIGs
 

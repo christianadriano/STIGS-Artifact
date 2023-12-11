@@ -1,6 +1,7 @@
 Follow the steps to re-use STIG Simulator in your environment:
 
 For Default Interference Scenario: {Tea Shop & Book Shop & Sock Shop}
+
 Step:1 Configure the Environment (Clone the STIG_Simulator project into your Operating System)
 
 Step2: pip install -r requirements.txt

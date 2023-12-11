@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<cluster>
+
+    <!-- Path I -->
+    <vertex id="ratings" label="S1" />
+    <vertex id="reviews" label="S1">
+        <adjacent vertex="ratings" label="S1" />
+    </vertex>
+    <vertex id="details" label="S1">
+        <adjacent vertex="reviews" label="S1" />
+    </vertex>
+    <vertex id="product-page" label="S1">
+        <adjacent vertex="details" label="S1"/>
+    </vertex>
+
+    <!-- Path II -->
+    <vertex id="image" label="S2"/>
+    <vertex id="auth" label="S2">
+        <adjacent vertex="image" label="S2" />
+    </vertex>
+    <vertex id="persis" label="S2">
+        <adjacent vertex="auth" label="S2" />
+    </vertex>
+    <vertex id="web-ui" label="S2">
+        <adjacent vertex="persis" label="S2"/>
+    </vertex>
+    <!-- Path III -->
+    <vertex id="queue" label="S3" />
+    <vertex id="ship" label="S3">
+        <adjacent vertex="queue" label="S3" />
+    </vertex>
+    <vertex id="orders" label="S3">
+        <adjacent vertex="ship" label="S3"/>
+    </vertex>
+    <vertex id="front-end" label="S3">
+        <adjacent vertex="orders" label="S3" />
+    </vertex>
+</cluster>

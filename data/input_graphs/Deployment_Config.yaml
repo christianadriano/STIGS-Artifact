@@ -1,0 +1,118 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker1
+  labels:
+    app.kubernetes.io/name: worker1
+spec:
+  containers:
+  - name: worker1
+    image: ubuntu
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: worker2
+  labels:
+    app.kubernetes.io/name: worker2
+spec:
+  containers:
+  - name: worker2
+    image: ubuntu
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: front-end
+spec:
+  selector:
+    app.kubernetes.io/name: worker2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: orders
+spec:
+  selector:
+    app.kubernetes.io/name: worker2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ship
+spec:
+  selector:
+    app.kubernetes.io/name: worker2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: queue
+spec:
+  selector:
+    app.kubernetes.io/name: worker2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-ui
+spec:
+  selector:
+    app.kubernetes.io/name: worker1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: persis
+spec:
+  selector:
+    app.kubernetes.io/name: worker1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: auth
+spec:
+  selector:
+    app.kubernetes.io/name: worker2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: image
+spec:
+  selector:
+    app.kubernetes.io/name: worker2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: product-page
+spec:
+  selector:
+    app.kubernetes.io/name: worker1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: details
+spec:
+  selector:
+    app.kubernetes.io/name: worker1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: reviews
+spec:
+  selector:
+    app.kubernetes.io/name: worker1
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ratings
+spec:
+  selector:
+    app.kubernetes.io/name: worker1
+---

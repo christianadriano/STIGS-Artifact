@@ -7,9 +7,12 @@ Step:1 Configure the Environment (Clone the STIG_Simulator project into your Ope
 Step2: pip install -r requirements.txt
 
 Step3: Run the STIG_generation.py (Use default settings)
+
+Expected Output: (1) Knowledge Deployment Graph (Figure 1 in paper), (2) Distinct Paths Graph (3) Deployment graph of services (4) No. of Interference Graphs (STIG) based on applied Graph Embedding rules ( Ranked STIGs )
        
 Main file is STIG_generation that is calling other files to product STIGs(Spatio-Temporal Interference Graphs)
 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
 Customize Scenario: 
 Step: 1 Configure the Environment (Clone the STIG_Simulator project into your Operating System)
 
@@ -19,13 +22,14 @@ Step 3: (a) In temporal_graph.py file , initial customized system architecture a
         and choose a path where you want to store temporal call graph. 
        - System architecture -> interation btw services
        - Dedeployment configuration file -> on which worker Node services are deployed (Hosted)
+       
 Code line 12: 
-  def main():
-
+  ------- def main():
     knowledge_graph = knowledge_graph_utils.get_knowledge_graph(
         'data/input_graphs/System_Architecture.xml',
         'data/input_graphs/Deployment_Config.yaml')
     file_path = 'data/callgraph_generator/temporal_callgraph_W1.npy'
+    
 ------
 (b) code line 33: Choose worker node to generate "Source(query) and Target(predicate) stack of Interference "
  query_predicate_stacks = generate_query_predicate_stacks(knowledge_graph, 'worker1', file_path)
@@ -38,3 +42,4 @@ change  SOURCE_NODE = 'A1' , TARGET_NODE = 'B1' ( According to new ground truth 
 NUMBER_OF_MODELS = 2 (up to 10 rankings of STIGs can generate using graph embedding metrics (Metrics Folder))
 VISUALIZE = True  # Enabling visualization will make first ranking very costly but print all the STIGs
 
+Expected Output: (1) Knowledge Deployment Graph (Figure 1 in paper), (2) Distinct Paths Graph (3) Deployment graph of services (4) No. of Interference Graphs (STIG) based on applied Graph Embedding rules ( Ranked STIGs )

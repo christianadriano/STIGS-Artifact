@@ -24,15 +24,14 @@ Step 3: (a) In temporal_graph.py file , initial customized system architecture a
        - Dedeployment configuration file -> on which worker Node services are deployed (Hosted)
        
 Code line 12: 
-  ------- def main():
+ def main():
     knowledge_graph = knowledge_graph_utils.get_knowledge_graph(
         'data/input_graphs/System_Architecture.xml',
         'data/input_graphs/Deployment_Config.yaml')
     file_path = 'data/callgraph_generator/temporal_callgraph_W1.npy'
     
-------
-(b) code line 33: Choose worker node to generate "Source(query) and Target(predicate) stack of Interference "
- query_predicate_stacks = generate_query_predicate_stacks(knowledge_graph, 'worker1', file_path)
+       (b) code line 33: Choose worker node to generate "Source(query) and Target(predicate) stack of Interference "
+        query_predicate_stacks = generate_query_predicate_stacks(knowledge_graph, 'worker1', file_path)
 
 Step 4: Run the STIG_generation.py 
   Before running :

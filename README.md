@@ -1,4 +1,5 @@
 Follow the steps to re-use STIG Simulator in your environment: (Recommended: PyCharm tool)
+------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 For Default Interference Scenario: {Tea Shop & Book Shop & Sock Shop}
 
@@ -10,7 +11,7 @@ Step3: Run the STIG_generation.py (Use default settings)
 
 Expected Output: (1) Knowledge Deployment Graph (Figure 1 in paper), (2) Distinct Paths Graph (3) Deployment graph of services (4) No. of Interference Graphs (STIG) based on applied Graph Embedding rules ( Ranked STIGs )
        
-Main file is STIG_generation that is calling other files to product STIGs(Spatio-Temporal Interference Graphs)
+Main file is STIG_generation that is calling other files to generate STIGs(Spatio-Temporal Interference Graphs)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
 Customize Scenario: 

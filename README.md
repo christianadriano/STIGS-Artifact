@@ -1,15 +1,17 @@
-==================================================================================================================
-		Follow the steps to re-use STIG Simulator in your environment (Recommended: PyCharm tool)
-==================================================================================================================
+=============================================
+Follow the steps to re-use STIG Simulator in your environment (Recommended: PyCharm tool)
+================================================
 
 Prerequisites:
-Install Pycharm Tool to run the artifact. Use the following link: 
+
+Install Pycharm Tool to run the artifact. 
+Use the following link: 
 for Windows: https://www.jetbrains.com/pycharm/download/?section=windows
 for macOS:   https://www.jetbrains.com/pycharm/download/?section=mac
 
-=============================================================================================================
-			For Default Interference Scenario: {Tea Shop & Book Shop & Sock Shop} 
-=============================================================================================================
+
+	 For Default Interference Scenario: {Tea Shop & Book Shop & Sock Shop} 
+
 Step:1 Configure the Environment (Clone the STIG_Simulator project into Pycharm tool)
 
 Step 2: pip install -r requirements.txt (using terminal) 
@@ -20,10 +22,11 @@ Step 3: Run the temporal_graph.py file
 Step 4: Run the STIG_generation.py file to see Generated STIGs. (Interference Graphs)(Use default settings)
        This file use generated temporal graphs and ground truth and generate no.of ranked stigs. 
        
-Main file is STIG_generation that is calling other files to product STIGs(Spatio-Temporal Interference Graphs)
-===============================================================================================================
-						Customize Scenario 
-===============================================================================================================
+Note:  Main file is STIG_generation that is calling other files to product STIGs(Spatio-Temporal Interference Graphs)
+
+
+         Customize Scenario:
+
 Step: 1  Step:1 Configure the Environment (Clone the STIG_Simulator project into Pycharm tool)
 
 Step 2: pip install -r requirements.txt (using terminal)
@@ -34,8 +37,8 @@ Step 3: temporal_graph.py file contains input graphs to simulator and generate t
         Code line 12: 
                 def main():
 
-    			knowledge_graph = knowledge_graph_utils.get_knowledge_graph('data/input_graphs/System_Architecture.xml','data/input_graphs/Deployment_Config.yaml')
-    			file_path = 'data/callgraph_generator/temporal_callgraph_W1.npy'
+    	 knowledge_graph = knowledge_graph_utils.get_knowledge_graph('data/input_graphs/System_Architecture.xml','data/input_graphs/Deployment_Config.yaml')
+    	 file_path = 'data/callgraph_generator/temporal_callgraph_W1.npy'
 ------
         (b) code line 33: Choose worker node to generate "Source(query) and Target(predicate) stack of Interference "
                            query_predicate_stacks = generate_query_predicate_stacks(knowledge_graph, 'worker1', file_path)

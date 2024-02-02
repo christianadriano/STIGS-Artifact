@@ -49,5 +49,5 @@ change  SOURCE_NODE = 'A1' , TARGET_NODE = 'B1' ( According to new ground truth 
 
 ****Note**** (Code line: 202, STIG_generation.py )
 NUMBER_OF_MODELS = 2 (up to 10 rankings of STIGs can generate using graph embedding metrics (Metrics Folder))
-VISUALIZE = True  # Enabling visualization will make first ranking very costly but print all the STIKs
+VISUALIZE = True  # Enabling visualization will make first ranking very costly but print all the STIGs
 

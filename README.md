@@ -2,6 +2,7 @@
 Follow the steps to re-use STIG Simulator in your environment (Recommended: PyCharm tool)
 ================================================
 Installation Video Guide: https://youtu.be/JUV-zH51l0Y
+
 Prerequisites:
 
 Install Pycharm Tool to run the artifact. 

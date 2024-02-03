@@ -1,7 +1,7 @@
 
 Follow the steps to re-use STIG Simulator in your environment (Recommended: PyCharm tool)
 ================================================
-Installation Video Guide: https://youtu.be/JUV-zH51l0Y
+Installation Video Guide: Zenodo Repository
 
 Prerequisites:
 
